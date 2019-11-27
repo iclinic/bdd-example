@@ -2,6 +2,7 @@
 # pylint: disable=no-name-in-module
 from behave import given, when, then
 from selenium.webdriver.common.by import By
+from time import sleep
 
 
 @given('que entrei no site do "GitHub"')
@@ -20,3 +21,4 @@ def step_impl(context, rep):
 def step_impl(context):
     assert context.driver.find_element(
         By.CSS_SELECTOR, 'a[class="v-align-middle"][href="/iclinic/bdd-example"]')
+    sleep(5)
