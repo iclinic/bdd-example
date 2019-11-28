@@ -1,9 +1,12 @@
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager  # allows chrome driver installation via API
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+def before_all(context):
+    context.driver = webdriver.Chrome(ChromeDriverManager().install())
 
 
 def before_scenario(context, scenario):
-    context.driver = webdriver.Chrome(ChromeDriverManager().install())
     context.driver.maximize_window()
 
 
