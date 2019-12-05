@@ -16,7 +16,7 @@ def step_impl(context, rep):
 
 
 @when('clicar em "All GitHub"')
-def step_impl(context):    # pylint: disable=function-redefined
+def step_impl(context):
     context.driver.find_element(
         By.CSS_SELECTOR, '#jump-to-suggestion-search-global .js-jump-to-badge-search').click()
 

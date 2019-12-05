@@ -1,8 +1,8 @@
 # language: pt
 
-Funcionalidade: Busca de repositório
+Funcionalidade: Barra de busca
 
-Cenário: Validação dos campos de login
+Cenário: Busca por repositório no GitHub
     Dado que entrei no site do "GitHub"
     Quando digitar "iclinic/bdd-example" na barra de busca
         E clicar em "All GitHub"
